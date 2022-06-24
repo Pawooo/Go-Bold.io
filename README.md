@@ -1,4 +1,4 @@
-AKA Go-bold.io (Dota 2 Reference Intended) / hage-maho (禿魔法)　/ hagemashou (励ましょう)　/ Project memento 毛根
+AKA Go-bold.io (Dota 2 Reference Intended) / hage-maho (禿魔法) / hagemashou (励ましょう) / Project memento 毛根
 
 
 My first ever webpage. The goal of the project is to showcase what can be done with Lottie and test my knowledge of webdev basics. 
