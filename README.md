@@ -23,7 +23,7 @@ Everything here is made by me, except for @unsplash images and font (authors lis
 7. Clamp() initially felt like a weird unusable thing, but once I figured it out I cannot help but admit that this is mindblowingly convenient way to size things. 
 8. Sometimes not putting huge descriptive objects into short patternized functions is the best choice because otherwise readability would become a thing of the past. 
 
-###### Credits
+#### Credits
   
 @Unsplash gods: 
 - angshu-purkait-t5RBpttNfj0
