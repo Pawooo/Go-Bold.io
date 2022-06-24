@@ -1,6 +1,6 @@
 ![Go_Bold io](https://user-images.githubusercontent.com/106813449/175611867-9fa9283f-b63d-4ecc-b868-890a7c135e2b.png)
 
-###### AKA Go-bold.io (Dota 2 Reference Intended) / hage-maho (禿魔法) / hagemashou (励ましょう) / Project memento 毛根
+##### AKA Go-bold.io (Dota 2 Reference Intended) / hage-maho (禿魔法) / hagemashou (励ましょう) / Project memento 毛根
 
 My first ever webpage. The goal of the project is to showcase what can be done with Lottie and to test my knowledge of webdev basics. Also it's a great way to demonstrate just how freaking amazing my multilingual puns are. 
 
@@ -12,7 +12,7 @@ Everything here is made by me, except for @unsplash images and font (authors lis
 * Sliders are a courtesy of Splide.js
 
 
-###### Things I discovered as I pieced this together: 
+##### Things I discovered as I pieced this together: 
 
 1. Adding additional effects in After Effects (albeit officially supported, as claimed in official documentation [[1]](https://airbnb.io/lottie/#/after-effects)), will make animation heavier than modifying the element’s metadata (Fill 32 vs Fill Color). In my case, I had pixelations as animation was rendered because the original comp size was smaller than intended. 
 2. How to play Lottie to a certain segment on hover and reset it after full play(). I couldn’t find a use case like this on any Website up until now, there’s no code on Codepen etc. that fits this use case so I’m quite proud of this haphazard implementation I came up with. 
