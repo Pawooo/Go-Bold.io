@@ -1,4 +1,4 @@
-![Go_Bold io](https://user-images.githubusercontent.com/106813449/175611325-7a8fa6da-3626-40dd-a9f3-f17c70926078.png)
+![Go_Bold io](https://user-images.githubusercontent.com/106813449/175611867-9fa9283f-b63d-4ecc-b868-890a7c135e2b.png)
 
 AKA Go-bold.io (Dota 2 Reference Intended) / hage-maho (禿魔法) / hagemashou (励ましょう) / Project memento 毛根
 
@@ -7,10 +7,10 @@ My first ever webpage. The goal of the project is to showcase what can be done w
 
 Everything here is made by me, except for @unsplash images and font (authors listed at the end of the document):
 
-*Animations were made using After Effects/Bodymovin/Lottie Plugin
-*Vectors were done in Illustrator
-*HTML/CSS/JS
-*Sliders are a courtesy of Splide.js
+* Animations were made using After Effects/Bodymovin/Lottie Plugin
+* Vectors were done in Illustrator
+* HTML/CSS/JS
+* Sliders are a courtesy of Splide.js
 
 
 Things I discovered as I pieced this together: 
