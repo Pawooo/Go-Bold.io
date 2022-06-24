@@ -4,7 +4,6 @@ AKA Go-bold.io (Dota 2 Reference Intended) / hage-maho (禿魔法) / hagemashou 
 
 My first ever webpage. The goal of the project is to showcase what can be done with Lottie and test my knowledge of webdev basics. Also it's a great way to demonstrate just how freaking amazing my puns are. 
 
-
 Everything here is made by me, except for @unsplash images and font (authors listed at the end of the document):
 
 * Animations were made using After Effects/Bodymovin/Lottie Plugin
@@ -37,5 +36,5 @@ Things I discovered as I pieced this together:
 - quinten-de-graaf-TJSDFQ5kSrY
 
 
-nonsplash demiurge:
+@nonsplash demiurge:
 - Evgeny 
