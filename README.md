@@ -26,26 +26,16 @@ Things I discovered as I pieced this together:
 
 
 @Unsplash gods: 
-
-angshu-purkait-t5RBpttNfj0
-
-caique-silva-3ujVzg9i2EI
-
-chalo-garcia-2mWKL_I70qk
-
-charles-etoroma-95UF6LXe-Lo
-
-chrissie-kremer-ttCxuHlS03M
-
-kevin-jackson-11UhA-nsrdk
-
-markus-spiske-q8ajgadT6Lc
-
-paul-szewczyk-QqvPrhyS_wI
-
-quinten-de-graaf-TJSDFQ5kSrY
+- angshu-purkait-t5RBpttNfj0
+- caique-silva-3ujVzg9i2EI
+- chalo-garcia-2mWKL_I70qk
+- charles-etoroma-95UF6LXe-Lo
+- chrissie-kremer-ttCxuHlS03M
+- kevin-jackson-11UhA-nsrdk
+- markus-spiske-q8ajgadT6Lc
+- paul-szewczyk-QqvPrhyS_wI
+- quinten-de-graaf-TJSDFQ5kSrY
 
 
 nonsplash demiurge:
-
-Evgeny 
+- Evgeny 
