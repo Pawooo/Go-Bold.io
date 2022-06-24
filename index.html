@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="splide/splide-4.0.6/dist/css/splide.min.css">
+    <script src="js/lottie.js" defer></script>
+    <script src="js/logic.js" defer></script>
+    <script src="splide/splide-4.0.6/dist/js/splide.min.js" defer></script>
+    <script src="splide/splide-extension-auto-scroll-master/dist/js/splide-extension-auto-scroll.js" defer></script>
+    <title>Go_Bold.io</title>
+</head>
+<body>
+    <!-- Language/Darkmode -->
+    <dialog id="settings">
+        <h1>Tweak Your Viewing Experience</h1>
+        <form method="dialog">
+            <ul id="#nav-menu">
+                <div>
+                    <h2>Color</h2>
+                    <li class="l-mode-switcher active">
+                        <img id="sun" src="img/icons/SVG/l-d-mode.svg" alt="Light Color Scheme">
+                        <img id="moon" class="" src="img/icons/SVG/l-d-mode-wh.svg" alt="Dark Color Scheme">
+                    </li>
+                </div>
+                <div>
+                    <h2>Language</h2>
+                    <li class="lang-icon active">
+                        <!-- <img id="lang-l" src="img/icons/SVG/language.svg" alt="Eng Language">
+                        <img id="lang-d" src="img/icons/SVG/language-wh.svg" alt="Eng Language White Btn"> -->
+                        <div id="lang-l"></div>
+                        <div id="lang-d"></div>
+                    </li>
+                </div>
+            </ul>
+          <button id="confirm-settings">Begin the Show</button>
+        </form>
+    </dialog>
+    <header>
+        <!-- 1. Dialog Appears 2. User Selects 2 settings (lang/color) 3. Dismiss button -->
+        <!-- <nav>
+            <ul id="#nav-menu">
+                <li class="l-mode-switcher active">
+                    <img id="sun" src="img/icons/SVG/l-d-mode.svg" alt="Change Color Scheme">
+                    <img id="moon" class="" src="img/icons/SVG/l-d-mode-wh.svg" alt="Change Color Scheme">
+                </li>
+                <li class="lang-icon active">
+                    <a id="lang-l" href="hagemashou"><img src="img/icons/SVG/language.svg" alt="Change Language"></a>
+                    <a id="lang-d" href="hagemashou"><img src="img/icons/SVG/language-wh.svg" alt="Change Language"></a>
+                </li>
+            </ul>
+        </nav> -->
+    </header>
+    <!-- Main Snap Content -->
+    <main>
+        <div class="scroll-container y proximity-scroll-snapping">
+            <section id="hero">
+                <lottie>
+                    <div class="wrapper">
+                        <div id="section-1">
+                        
+                        </div>
+                        <div id="section-2">
+                        
+                        </div>
+                    </div>
+                </lottie>
+            </section>
+            <section id="the-baldest">
+                <h1>Join the Baldest</h1>
+                <div class="card-wrapper">
+                    <button id="card-scroll-left"><</button>
+                    <div class="bc">
+                        <div class="baldest-card">
+                            <h2 class="baldest-title">Professor X</h2>
+                            <lottie>
+                                <div id="profx-anim">
+
+                                </div>
+                            </lottie>
+                            <!-- <img src="img\baldest-heroes\SVG\profx-st.svg" alt="Professor X"> -->
+                        </div>
+                        <div class="bc-background"></div>
+                    </div>
+                    <div class="bc">
+                        <div class="baldest-card">
+                            <h2 class="baldest-title">Prof. Eggman</h2>
+                            <lottie>
+                                <div id="egg-anim">
+
+                                </div>
+                            </lottie>
+                            <!-- <img src="img\baldest-heroes\SVG\egg-st.svg" alt="Eggman"> -->
+                        </div>
+                        <div class="bc-background"></div>
+                    </div>
+                    <div class="bc">
+                        <div class="baldest-card">
+                            <h2 class="baldest-title">Saitama先生</h2>
+                            <lottie>
+                                <div id="ghandi-anim">
+
+                                </div>
+                            </lottie>
+                            <!-- <img src="img\baldest-heroes\SVG\ghandi-st.svg" alt="Ghandi, not Saitama"> -->
+                        </div>
+                        <div class="bc-background"></div>
+                    </div>
+                    <button id="card-scroll-right">></button>
+                </div>
+                <h1 class="smscr">Rub Me</h1>
+            </section>
+            <section id="save-your-money">
+                <lottie>
+                    <div id="dolla-anim1" class="dolla">
+                    </div>
+                </lottie>
+                <lottie>
+                    <div id="dolla-anim2" class="dolla">
+                    </div>
+                </lottie>
+                <lottie>
+                    <div id="dolla-anim3" class="dolla">
+                    </div>
+                </lottie>
+            </section>
+            <section id="how-to-grow-balds">
+                <h1>How to Start</h1>
+                <div class="step-wrapper">
+                    <div class="step">
+                        <h2>STEP 01</h2>
+                    </div>
+                    <div class="step-extra">
+                        <img class="step-icon" src="img/icons/SVG/scissors.svg" alt="Scissors Icon">
+                        <!-- <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusantium quae, cum totam magnam iusto deserunt quisquam rem similique ullam iure libero soluta corrupti nulla ipsa debitis officiis minima doloribus minus?</p> -->
+                    </div>
+                </div>
+                <div class="step-wrapper">
+                    <div class="step">
+                        <h2>STEP 02</h2>
+                    </div>
+                    <div class="step-extra">
+                        <img class="step-icon" src="img/icons/SVG/money.svg" alt="Money Icon">
+                        <!-- <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusantium quae, cum totam magnam iusto deserunt quisquam rem similique ullam iure libero soluta corrupti nulla ipsa debitis officiis minima doloribus minus?</p> -->
+                    </div>
+                </div>
+                <!-- <div class="step-wrapper quote">
+                    <h1>
+                        "Stop feeling bad about becoming the better version of yourself"
+                    </h1>
+                    <h1>Ghandi</h1>
+                </div> -->
+            </section>
+            <section id="heroes">
+                <div class="heroes-h1wrapper">
+                    <h1 class="bigscr">Meet Your Heroes</h1>
+                    <h1>Meet Your Heroes</h1>
+                    <h1 class="bigscr">Meet Your Heroes</h1>
+                </div>
+
+                <div class="splideFor splide" role="group" aria-label="Splide Basic HTML Example">
+                    <div class="splide__track">
+                          <ul class="splide__list">
+                              <li class="splide__slide"><img class="slide-img" src="img\baldest-heroes\angshu-purkait-t5RBpttNfj0-unsplash.jpg" alt="" srcset=""></li>
+                              <li class="splide__slide"><img class="slide-img" src="img\baldest-heroes\chalo-garcia-2mWKL_I70qk-unsplash.jpg" alt=""></li>
+                              <li class="splide__slide"><img class="slide-img" src="img\baldest-heroes\kevin-jackson-11UhA-nsrdk-unsplash.jpg" alt=""></li>
+                              <li class="splide__slide"><img class="slide-img" src="img\baldest-heroes\quinten-de-graaf-TJSDFQ5kSrY-unsplash.jpg" alt=""></li>
+                              <li class="splide__slide"><img class="slide-img" src="img\baldest-heroes\zoran-borojevic-f5xiGmFwXIU-unsplash.jpg" alt=""></li>
+                          </ul>
+                    </div>
+                  </div>
+                <div class="splideRev splide" role="group" aria-label="Splide Basic HTML Example">
+                    <div class="splide__track">
+                          <ul class="splide__list">
+                              <li class="splide__slide"><img class="slide-img" src="img\baldest-heroes\paul-szewczyk-QqvPrhyS_wI-unsplash.jpg" alt="" srcset=""></li>
+                              <li class="splide__slide"><img class="slide-img" src="img\baldest-heroes\photo_2018-09-17_21-12-59.jpg" alt="" srcset=""></li>
+                              <li class="splide__slide"><img class="slide-img" src="img\baldest-heroes\charles-etoroma-95UF6LXe-Lo-unsplash.jpg" alt="" srcset=""></li>
+                              <li class="splide__slide"><img class="slide-img" src="img\baldest-heroes\chrissie-kremer-ttCxuHlS03M-unsplash.jpg" alt="" srcset=""></li>
+                              <li class="splide__slide"><img class="slide-img" src="img\baldest-heroes\caique-silva-3ujVzg9i2EI-unsplash.jpg" alt="" srcset=""></li>
+                              <li class="splide__slide"><img class="slide-img" src="img\baldest-heroes\markus-spiske-q8ajgadT6Lc-unsplash.jpg" alt="" srcset=""></li>
+                          </ul>
+                    </div>
+                  </div>
+              
+
+                <!-- <div class="baldies-container">
+                    <div class="baldies">
+                        <div class="baldy"><img src="img\baldest-heroes\angshu-purkait-t5RBpttNfj0-unsplash.jpg" alt=""></div>
+                        <div class="baldy"><img src="img\baldest-heroes\chalo-garcia-2mWKL_I70qk-unsplash.jpg" alt=""></div>
+                        <div class="baldy"><img src="img\baldest-heroes\kevin-jackson-11UhA-nsrdk-unsplash.jpg" alt=""></div>
+                        <div class="baldy"><img src="img\baldest-heroes\quinten-de-graaf-TJSDFQ5kSrY-unsplash.jpg" alt=""></div>
+                        <div class="baldy"><img src="img\baldest-heroes\zoran-borojevic-f5xiGmFwXIU-unsplash.jpg" alt=""></div>
+                        <div class="baldy"><img src="" alt=""></div>
+                    </div>
+                </div>
+                <div class="baldies-container">
+                    <div class="baldies">
+                        <div class="baldy"><img src="img\baldest-heroes\paul-szewczyk-QqvPrhyS_wI-unsplash.jpg" alt=""></div>
+                        <div class="baldy"><img src="img\baldest-heroes\charles-etoroma-95UF6LXe-Lo-unsplash.jpg" alt=""></div>
+                        <div class="baldy"><img src="img\baldest-heroes\chrissie-kremer-ttCxuHlS03M-unsplash.jpg" alt=""></div>
+                        <div class="baldy"><img src="img\baldest-heroes\caique-silva-3ujVzg9i2EI-unsplash.jpg" alt=""></div>
+                        <div class="baldy"><img src="" alt=""></div>
+                        <div class="baldy"><img src="" alt=""></div>
+                    </div>
+                </div> -->
+            </section>
+            <section id="archibald">
+                <!-- <a href=""><h2>And Here's Our Mascot Cat ArchiBALD</h2></a> -->
+                <div id="meet-archibald">
+                    <h2>ARCHI</h2>
+                    <h2>BALD</h2>
+                </div>
+            </section>
+            <section id="quotes">
+                <!-- <h1>Random Bald Puns</h1>
+                <h2>memento 毛根</h2> -->
+                <div class="quote">
+                    <h2>
+                        "Stop feeling bad about becoming
+                        the better version of yourself"
+                    </h2>
+                    <h2>—GHANDAM</h2>
+                </div>
+            </section>
+        </div>
+    </main>
+        <!-- <footer>
+            <h1>Random Bald Puns</h1>
+            <h2>memento 毛根 森さん</h2>
+        </footer> -->
+
+        <!-- Archibald
+
+        Bald = hage
+        Bold = brave -->
+</body>
+</html>

@@ -1,0 +1,945 @@
+@layer bigScr, smScr;
+
+@layer smScr {
+    @media (max-width: 1400px) {
+        .bigscr {
+            display: none;
+        }
+        section h1 {
+            font-size: 5rem;
+            font-size: 15vw;
+            line-height: 1.2;
+        }   
+         /* #the-baldest h1:nth-of-type(1) {
+            position: relative;
+            top: 2.5em;
+            font-size: 3rem;
+        } */
+        /* #the-baldest h1:nth-of-type(2) {
+            position: relative;
+            top: -3em;
+        }  */
+        /* .card-wrapper {
+            position: relative;
+            top: -2.5em;
+            scale: 0.65;
+            flex-wrap: wrap;
+            gap: 1rem;
+            margin: 0;
+        } */
+        .smscr {
+            display: block;
+        }
+        #how-to-grow-balds .step {
+            width: 80vw;
+            height: 15vw;
+        }
+        .step-extra img {
+            min-width: 15vw;
+        }
+        .step-wrapper:nth-of-type(odd) .step-extra {
+            /* display: inline-block; */
+            opacity: 1;
+            width: 20vw;
+            padding: 1rem;
+            border: 6px solid var(--blackish);
+            position: relative;
+            top: -6px;
+            left: 20%;
+            transition: 0.5s ease-in-out;
+            z-index: 1; 
+        }
+
+        .step-wrapper:nth-of-type(even) .step-extra {
+                /* display: inline-block; */
+                opacity: 1;
+                width: 20vw;
+                padding: 1rem;
+                border: 6px solid var(--blackish);
+                position: relative; 
+                top: -6px;
+                right: 20%;
+                transition: 0.5s ease-in-out;
+                z-index: 1; 
+        }
+        .step h2 {
+            padding: 0;
+        }
+        /* .step-wrapper {
+            scale: 0.5;
+        } */
+        /* .step {
+            width: 49%;
+        }
+        .step h2 {
+            font-size: 4rem;
+        }
+        .step-extra {
+            scale: 0.4;
+        } */
+        #heroes h1:nth-of-type(2) {
+            font-size: 8rem;
+            text-align: center;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            top: 0;
+            margin: auto;
+            display: grid;
+            align-items: center;
+            /* top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%); */
+        }
+        #quotes {
+            padding: 0;
+        }
+        #quotes h2 {
+            font-size: 4rem;
+        }
+        #the-baldest {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+        }
+        .bc {
+            height: 420px;
+        }
+        #meet-archibald h2 {
+            font-size: 5rem;
+        }
+        /* Dialogue Mobile Style */
+        #settings ul {
+            flex-direction: column;
+            padding: 0;
+        }
+        
+        #settings {
+            width: 100%;
+            height: 100%;
+            text-align: center;
+            background-color: var(--blackish);
+            color: var(--white);
+            box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+            border-radius: 1rem;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        
+        
+        #confirm-settings {
+            all: unset;
+            /* display: block; */
+            width: 80%;
+            height: 30%;
+            font-size: clamp(2rem, 8vw, 5rem);
+            color: var(--white);
+            border: 0.5rem solid var(--white);
+            border-radius: 1rem;
+            background-color: var(--orange);
+            cursor: pointer;
+            margin-top: 5rem;
+        }
+        
+        #settings::backdrop {
+            background: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.4));
+            animation: fade-in 1s;
+        }
+    }
+    /* Responsifying card display */
+#card-scroll-left,
+#card-scroll-right {
+    display: none;
+}
+
+@media (max-width: 1000px) {
+    #the-baldest {
+        height: 100%;
+    }
+    .card-wrapper > * > * {
+        width: clamp(159px, 20vw, 21vw); 
+        height: 29vh;
+    }
+    .card-wrapper {
+        flex-wrap: wrap;
+        flex-grow: 0;
+        gap: 0;
+        margin: 0;
+    }
+    .bc {
+        height: 200px;
+    }
+    .card-wrapper h2 {
+        font-size: clamp(1rem, 1rem, 3vw);
+    }
+    .bc-background {
+        top: -28vh;
+    }
+    .baldest-title {
+        width:100%;
+    }
+    .baldest-card {
+        display: flex;
+        flex-direction: column;
+        /* justify-content: space-evenly;
+        align-items: center; */
+    }
+    #profx-anim {
+        top: -2.5em;
+    }
+
+    /* .card-wrapper {
+        width: calc(100% - 2 * 5rem);
+        transform: translateX(+100%);
+        gap: 33%;
+    }
+    .bc {
+        flex: 0 0 100%;
+        max-width: 100%;
+        aspect-ratio: 79 : 104;
+    }
+    #card-scroll-left {
+        float: left;
+    }
+    #card-scroll-right {
+        float: right;
+    }
+    #card-scroll-left,
+    #card-scroll-right {
+            z-index: 4;
+            display: block;
+            width: 5rem;
+            background-color: rgba(0, 0, 0, .25);
+            height: 200px;
+            color: white;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 18px;
+            opacity: 0.8;
+            cursor: pointer;
+    } */
+}
+}
+
+/* Reset + Typography */
+@import url('https://fonts.googleapis.com/css2?family=Reem+Kufi:wght@400;500;600;700&display=swap');
+
+@layer bigScr {
+* {
+    margin: 0;
+    font-family: 'Reem Kufi', sans-serif;
+}
+
+/* Color Variables */
+
+:root,
+:root.light {
+    --orange: hsl(41, 100%, 50%);
+    --blackish: hsl(0, 0%, 13%);
+    --aqua: hsl(174, 62%, 47%);
+    --white: hsl(100, 100%, 99%);
+    --red: hsl(353, 81%, 51%);
+}
+
+:root.dark {
+    --orange: hsl(100, 100%, 99%); 
+    --blackish: hsl(0, 0%, 13%);
+    --aqua: hsl(42, 75%, 56%);
+    --white: hsl(353, 81%, 51%);
+    --red: hsl(353, 81%, 51%);
+}
+
+
+/* @media (prefers-color-scheme: light) {
+:root {
+    --orange: hsl(41, 100%, 50%);
+    --blackish: hsl(0, 0%, 13%);
+    --aqua: hsl(174, 62%, 47%);
+    --white: hsl(100, 100%, 99%);
+    --red: hsl(353, 81%, 51%);
+    }
+} */
+
+/* @media (prefers-color-scheme: dark) {
+:root {
+    --orange: hsl(41, 100%, 50%); 
+    --blackish: hsl(0, 0%, 13%);
+    --aqua: hsl(0, 0%, 13%);
+    --white: hsl(353, 81%, 51%);
+    --red: hsl(353, 81%, 51%);
+    }
+} */
+
+/* Snap Scroll */
+
+.smscr {
+    display: none;
+}
+
+html, body {
+    height: 100%;
+    scrollbar-width: none;
+    box-sizing: border-box;
+    /* user-select: none; */
+  }
+
+  /* does not work on firefox */
+::-webkit-scrollbar {
+        display: none; 
+        width: 0px;
+        background: transparent; 
+        /* make scrollbar transparent */
+}
+
+.scroll-container {
+    height: 100vh;
+    overflow-y: scroll; /* This thing  displays scrollbar and at the same time */
+    scroll-snap-type: y mandatory;
+    scrollbar-width: none;
+  }
+  
+section {
+    height: 100vh;
+    scroll-snap-align: start;
+  }
+  
+/* Dialog */
+#settings {
+    width: 80%;
+    height: 80%;
+    text-align: center;
+    background-color: var(--blackish);
+    color: var(--white);
+    box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+    border-radius: 1rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: all 800ms ease-in-out;
+}
+
+#settings > * {
+    padding: 0;
+}
+
+#settings h1 {
+    font-size: clamp(2rem, 10vw, 6rem);
+}
+
+/* Welp, no easy way for me */
+/* #settings > * {
+    scale: 2;
+} */
+
+#settings ul {
+    display: flex;
+    justify-content: space-evenly;
+    list-style-type: none;
+}
+
+#settings h2 {
+    text-align: center;
+    font-size: clamp(2rem, 8vw, 5rem);
+}
+
+#settings ul li img {
+    height: clamp(15vw, 250px, 10rem);    
+}
+
+#settings ul li div {
+    height: clamp(15vw, 250px, 10rem);    
+}
+
+
+#confirm-settings {
+    all: unset;
+    /* display: block; */
+    width: 50%;
+    height: 20%;
+    font-size: clamp(2rem, 8vw, 5rem);
+    color: var(--white);
+    border: 0.5rem solid var(--white);
+    border-radius: 1rem;
+    background-color: var(--orange);
+    cursor: pointer;
+    margin-top: 5rem;
+    transition: all 800ms ease-in-out;
+}
+
+#confirm-settings:hover, 
+#confirm-settings:active {
+    /* display: block; */
+    color: var(--orange);
+    border: 0.5rem solid var(--orange);
+    background-color: var(--white);
+}
+
+#settings::backdrop {
+    background: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.4));
+    animation: fade-in 1s;
+}
+
+@keyframes fade-in {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Hero Section */
+
+#hero {
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background-color: #da1e62; */
+    font-size: 8rem;
+  }
+
+/* Nav-Menu Styling */
+
+nav {
+    /* display: none; */
+    position: sticky;
+    background-color: var(--blackish);
+    height: 6rem;
+}
+
+nav ul {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    list-style-type: none;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin-right: 4rem;
+    margin-top: 1.5rem;
+    width: 3rem;
+    height: 1rem;
+    cursor: pointer;
+}
+
+nav ul li:focus      {
+    border: solid 1px var(--orange);
+}
+
+.l-mode-switcher.active #moon,
+.lang-icon.active #lang-d {
+    display: none;
+}
+
+.l-mode-switcher:not(.active) #sun,
+.lang-icon:not(.active) #lang-l {
+    display: none;
+}
+
+/* Snap Scroll Backgrounds */
+
+section:nth-child(1) {
+    background-color: var(--blackish);
+    color: var(--orange);    
+    }
+
+section:nth-child(2) {
+    background-color: var(--white);
+    color: var(--blackish);     
+    }
+
+section:nth-child(3) {
+    background-color: var(--aqua);  
+    color: var(--white);  
+    }
+
+section:nth-child(4) {
+    background-color: var(--white); 
+    color: var(--white);   
+    }  
+
+section:nth-child(5) {
+    background-color: var(--blackish); 
+    color: var(--orange);   
+    }
+
+#section-1 {
+    width: 100vw;
+    position: relative;
+    left: 100px;
+    scale: 0.8;
+}
+
+#section-2 {
+    position: relative;
+    bottom: calc(100px + 4vw);
+    left: 180px;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.wrapper > * {
+    flex: 1;
+    min-width: 49vw;
+}
+
+/* Cards */
+
+#the-baldest h1 {
+    text-align: center;
+    font-size: 7rem;
+}
+
+.card-wrapper {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 6em;
+}
+
+.baldest-card {
+    width: 316px;
+    height: 416px;
+    background-color: var(--blackish);
+    border-radius: 2rem;
+    position: relative;
+    z-index: 2;
+    transition: .5s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+}
+
+.baldest-card img {
+    margin-top: 1.5rem;
+    width: 300px;
+}
+
+.bc-background {
+    width: 316px;
+    height: 416px;
+    background-color: var(--aqua);
+    border-radius: 2rem;
+    position: relative;
+    top: -25.6em;
+    left: 0.3em;
+    z-index: 1;
+    transition: .2s ease-in-out;
+}
+
+.bc {
+    transition: .4s ease-out;
+}
+
+.baldest-card:hover {
+    scale: 1.05;
+}
+
+.baldest-card:hover .bc-background {
+    position: relative;
+    top: -26em;
+    left: 0em;
+}
+
+.baldest-title {
+    text-align: center;
+    color: var(--white);
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+#profx-anim {
+    position: relative;
+    top: -60px;
+}
+
+@media (max-width: 1582px) {
+    .wrapper {
+        height: 100%;
+    }
+    #section-1 {
+        position: relative;
+        /* top:400px; */
+        left: 0;
+    }
+    #section-2 {
+        display: none;
+        position: relative;
+        bottom: 0;
+        left: 300px;
+    }
+}
+
+/* Save Your Money */
+#save-your-money {
+    display: flex;
+    flex-direction: row;
+    /* flex-wrap: wrap; */
+    justify-content: space-around;
+    align-items: center;
+}
+
+#dolla-anim1 {
+    justify-content: flex-start;   
+    position: relative;
+    top: -20.625em;
+    left: 2em;
+}
+
+#dolla-anim2 {
+    justify-content: center;   
+    position: relative;
+}
+
+#dolla-anim3 {
+    justify-content: flex-end;   
+    position: relative;
+    top: 20.625em;
+    right: 2em;
+}
+
+@media  (max-width: 1406px) {
+    #save-your-money {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 1rem;
+    }
+
+    #dolla-anim1 {
+        top: 0;
+        left: 0;
+    }
+
+    #dolla-anim3 {
+        top: 0;
+        right: 0;
+    }
+}    
+    
+/* Join the Club */
+
+#how-to-grow-balds {
+    height: 100vh;
+    text-align: center;
+    /* scroll-padding: 100px; */
+    /* scroll-snap-type: y mandatory; */
+}
+
+#how-to-grow-balds h1 {
+    color: var(--blackish);
+    font-size: 7rem;
+    font-size: 7vw;
+}
+
+.step {
+    margin-top: 5rem;
+    z-index: 2;
+}
+
+/* .lefter {
+    float: left;
+}
+
+.righter {
+    float: right;
+} */
+
+.step-wrapper:nth-of-type(odd) {
+    /* if you switch it to inline-flex, you'll get better selection but you'll have to create a wrapper that will fuck up everything */
+    display: flex;
+    flex-direction: column;
+    float: left;
+}
+
+.step-wrapper:nth-of-type(even) {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    float: right;
+}
+
+/* Animation pattern where step explanation appears from the right */
+/* .step-wrapper div:nth-child(1) {
+    width: 1224px;
+    background-color: var(--blackish);
+    border-radius: 0 25rem 25rem 0;
+}
+
+.step-wrapper div:nth-child(2) {
+    width: 1224px;
+    background-color: var(--white);
+    border-radius: 25rem 0 0 25rem;
+    float: right;
+} */
+
+.step-wrapper:nth-of-type(odd) .step {
+    background-color: var(--blackish);
+    border-radius: 0 25rem 25rem 0;
+    flex-direction: row;
+    /* float: left; */
+    /* aspect-ratio: 16/9; */
+}
+
+.step-wrapper:nth-of-type(even) .step {
+    background-color: var(--blackish);
+    border-radius: 25rem 0 0 25rem;
+    /* float: right; */
+    /* position: relative; */
+}
+
+.step-wrapper:nth-of-type(odd) .step-extra {
+        /* display: inline-block; */
+        opacity: 0;
+        width: 20em;
+        padding: 2rem;
+        border: 6px solid var(--blackish);
+        position: relative;
+        top: -60px;
+        left: 200px;
+        transition: 0.5s ease-in-out;
+        z-index: 1; 
+}
+
+.step-wrapper:nth-of-type(even) .step-extra {
+        /* display: inline-block; */
+        opacity: 0;
+        width: 20em;
+        padding: 2rem;
+        border: 6px solid var(--blackish);
+        position: relative; 
+        top: -60px;
+        right: 200px;
+        transition: 0.5s ease-in-out;
+        z-index: 1; 
+}
+
+/* hover logic that I'll try to circumvent here */
+.step-wrapper:nth-of-type(odd):hover .step-extra {
+    /* display: block; */
+    position: relative;
+    opacity: 1;
+    top: -6px;
+    left: 200px;
+    box-shadow: inset;
+}
+
+.step-wrapper:nth-of-type(even):hover .step-extra {
+    /* display: block; */
+    position: relative;
+    opacity: 1;
+    top: -6px;
+    right: 200px;
+    box-shadow: inset;
+}
+
+/* IDEAL STATE OF THINGS THAT DOES NOT WORK */
+/* .step-wrapper:nth-of-type(odd) .step:hover {
+    opacity: 1;
+    top: -6px;
+    left: 200px;
+    box-shadow: inset;
+} */
+
+.step {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.step h2 {
+    padding: 0 2em 0 2em;
+    font-size: 6vw;
+    color: var(--white);
+    font-weight: 600;
+}
+
+.step-icon {
+    min-width: 300px;
+}
+
+/* Meet Your Heroes */
+
+#heroes {
+    position: relative;
+}
+
+/* .heroes-h1wrapper {
+    position: absolute;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    mix-blend-mode: screen;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 100%;
+} */
+
+#heroes h1:nth-of-type(1) {
+    text-align: center;
+    font-size: 7rem;
+    /* display: sticky; */
+    position: absolute;
+    z-index: 2;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    mix-blend-mode: screen;
+    font-size: 6vw;
+    text-align: center;
+}   
+
+#heroes h1:nth-of-type(2) {
+    text-align: center;
+    font-size: 7rem;
+    /* display: sticky; */
+    position: absolute;
+    z-index: 2;
+    left: 0;
+    right: 0;
+    top: 33%;
+    bottom: 0;
+    margin: auto;
+    mix-blend-mode: screen;
+    font-size: 7vw;
+    text-align: center;
+}   
+
+#heroes h1:nth-of-type(3) {
+    text-align: center;
+    font-size: 7rem;
+    /* display: sticky; */
+    position: absolute;
+    z-index: 2;
+    top:70%;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    mix-blend-mode: screen;
+    font-size: 8vw;
+    text-align: center;
+}   
+
+
+/* .splide {
+    margin-bottom: 4rem;
+} */
+
+.slide-img {
+    width: 100%;
+    height: 50vh;
+    object-fit: cover;
+    object-position: top;
+}
+
+/* Slider from scratch (scrapped) */
+
+/* .baldies-container {
+    width: 100%;
+    overflow: hidden;
+}
+
+.baldies {
+    display: flex;
+    width: calc(100% - 10%);
+    transform: translateX(0%);
+} */
+
+/* .baldy { */
+    /* width: 300px; */
+    /* aspect-ratio: 16/9; */
+    /* height: 300px; */
+    /* background-repeat: no-repeat;
+    background-position: center; */
+    /* background-size: cover;
+    padding: .25rem;
+} */
+
+/* .baldy > img {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    max-height: 450px;
+} */
+
+/* Archibald */
+
+#meet-archibald {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+}
+
+#meet-archibald h2 {
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+    font-size: 7rem;
+    mix-blend-mode: screen;
+    color: rgb(189, 18, 18);
+}
+
+#archibald {
+    background-image: url('img/dan-wayman-WUt9P_0fEP8-unsplash.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+/* Quotes */
+
+#quotes {
+    display: grid;
+    align-items: center;
+    padding: 100px;
+    background-color: var(--white);
+}
+
+#quotes h1 {
+    text-align: center;
+    font-size: 7rem;
+}
+
+#quotes h2 {
+    text-align: center;
+    font-size: 7rem;
+}
+
+#quotes h2:last-of-type {
+    text-align: right;
+}
+/* 
+.quote {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.quote h2:last-of-type {
+    align-items: flex-end;
+} */
+
+/* Footer */
+
+
+}
