@@ -10,23 +10,6 @@
             font-size: 15vw;
             line-height: 1.2;
         }   
-         /* #the-baldest h1:nth-of-type(1) {
-            position: relative;
-            top: 2.5em;
-            font-size: 3rem;
-        } */
-        /* #the-baldest h1:nth-of-type(2) {
-            position: relative;
-            top: -3em;
-        }  */
-        /* .card-wrapper {
-            position: relative;
-            top: -2.5em;
-            scale: 0.65;
-            flex-wrap: wrap;
-            gap: 1rem;
-            margin: 0;
-        } */
         .smscr {
             display: block;
         }
@@ -38,7 +21,7 @@
             min-width: 15vw;
         }
         .step-wrapper:nth-of-type(odd) .step-extra {
-            /* display: inline-block; */
+
             opacity: 1;
             width: 20vw;
             padding: 1rem;
@@ -51,7 +34,6 @@
         }
 
         .step-wrapper:nth-of-type(even) .step-extra {
-                /* display: inline-block; */
                 opacity: 1;
                 width: 20vw;
                 padding: 1rem;
@@ -65,18 +47,6 @@
         .step h2 {
             padding: 0;
         }
-        /* .step-wrapper {
-            scale: 0.5;
-        } */
-        /* .step {
-            width: 49%;
-        }
-        .step h2 {
-            font-size: 4rem;
-        }
-        .step-extra {
-            scale: 0.4;
-        } */
         #heroes h1:nth-of-type(2) {
             font-size: 8rem;
             text-align: center;
@@ -87,9 +57,6 @@
             margin: auto;
             display: grid;
             align-items: center;
-            /* top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%); */
         }
         #quotes {
             padding: 0;
@@ -131,7 +98,6 @@
         
         #confirm-settings {
             all: unset;
-            /* display: block; */
             width: 80%;
             height: 30%;
             font-size: clamp(2rem, 8vw, 5rem);
@@ -148,7 +114,7 @@
             animation: fade-in 1s;
         }
     }
-    /* Responsifying card display */
+/* Responsifying card display */
 #card-scroll-left,
 #card-scroll-right {
     display: none;
@@ -183,43 +149,10 @@
     .baldest-card {
         display: flex;
         flex-direction: column;
-        /* justify-content: space-evenly;
-        align-items: center; */
     }
     #profx-anim {
         top: -2.5em;
     }
-
-    /* .card-wrapper {
-        width: calc(100% - 2 * 5rem);
-        transform: translateX(+100%);
-        gap: 33%;
-    }
-    .bc {
-        flex: 0 0 100%;
-        max-width: 100%;
-        aspect-ratio: 79 : 104;
-    }
-    #card-scroll-left {
-        float: left;
-    }
-    #card-scroll-right {
-        float: right;
-    }
-    #card-scroll-left,
-    #card-scroll-right {
-            z-index: 4;
-            display: block;
-            width: 5rem;
-            background-color: rgba(0, 0, 0, .25);
-            height: 200px;
-            color: white;
-            text-decoration: none;
-            font-weight: 600;
-            font-size: 18px;
-            opacity: 0.8;
-            cursor: pointer;
-    } */
 }
 }
 
@@ -251,27 +184,6 @@
     --red: hsl(353, 81%, 51%);
 }
 
-
-/* @media (prefers-color-scheme: light) {
-:root {
-    --orange: hsl(41, 100%, 50%);
-    --blackish: hsl(0, 0%, 13%);
-    --aqua: hsl(174, 62%, 47%);
-    --white: hsl(100, 100%, 99%);
-    --red: hsl(353, 81%, 51%);
-    }
-} */
-
-/* @media (prefers-color-scheme: dark) {
-:root {
-    --orange: hsl(41, 100%, 50%); 
-    --blackish: hsl(0, 0%, 13%);
-    --aqua: hsl(0, 0%, 13%);
-    --white: hsl(353, 81%, 51%);
-    --red: hsl(353, 81%, 51%);
-    }
-} */
-
 /* Snap Scroll */
 
 .smscr {
@@ -282,10 +194,9 @@ html, body {
     height: 100%;
     scrollbar-width: none;
     box-sizing: border-box;
-    /* user-select: none; */
   }
 
-  /* does not work on firefox */
+/* does not work on firefox */
 ::-webkit-scrollbar {
         display: none; 
         width: 0px;
@@ -295,7 +206,7 @@ html, body {
 
 .scroll-container {
     height: 100vh;
-    overflow-y: scroll; /* This thing  displays scrollbar and at the same time */
+    overflow-y: scroll;
     scroll-snap-type: y mandatory;
     scrollbar-width: none;
   }
@@ -329,11 +240,6 @@ section {
     font-size: clamp(2rem, 10vw, 6rem);
 }
 
-/* Welp, no easy way for me */
-/* #settings > * {
-    scale: 2;
-} */
-
 #settings ul {
     display: flex;
     justify-content: space-evenly;
@@ -356,7 +262,6 @@ section {
 
 #confirm-settings {
     all: unset;
-    /* display: block; */
     width: 50%;
     height: 20%;
     font-size: clamp(2rem, 8vw, 5rem);
@@ -371,7 +276,6 @@ section {
 
 #confirm-settings:hover, 
 #confirm-settings:active {
-    /* display: block; */
     color: var(--orange);
     border: 0.5rem solid var(--orange);
     background-color: var(--white);
@@ -392,20 +296,16 @@ section {
 }
 
 /* Hero Section */
-
 #hero {
     padding: 1rem;
     display: flex;
     align-items: center;
     justify-content: center;
-    /* background-color: #da1e62; */
     font-size: 8rem;
   }
 
 /* Nav-Menu Styling */
-
 nav {
-    /* display: none; */
     position: sticky;
     background-color: var(--blackish);
     height: 6rem;
@@ -444,7 +344,6 @@ nav ul li:focus      {
 }
 
 /* Snap Scroll Backgrounds */
-
 section:nth-child(1) {
     background-color: var(--blackish);
     color: var(--orange);    
@@ -496,7 +395,6 @@ section:nth-child(5) {
 }
 
 /* Cards */
-
 #the-baldest h1 {
     text-align: center;
     font-size: 7rem;
@@ -572,7 +470,6 @@ section:nth-child(5) {
     }
     #section-1 {
         position: relative;
-        /* top:400px; */
         left: 0;
     }
     #section-2 {
@@ -587,7 +484,6 @@ section:nth-child(5) {
 #save-your-money {
     display: flex;
     flex-direction: row;
-    /* flex-wrap: wrap; */
     justify-content: space-around;
     align-items: center;
 }
@@ -631,12 +527,9 @@ section:nth-child(5) {
 }    
     
 /* Join the Club */
-
 #how-to-grow-balds {
     height: 100vh;
     text-align: center;
-    /* scroll-padding: 100px; */
-    /* scroll-snap-type: y mandatory; */
 }
 
 #how-to-grow-balds h1 {
@@ -649,14 +542,6 @@ section:nth-child(5) {
     margin-top: 5rem;
     z-index: 2;
 }
-
-/* .lefter {
-    float: left;
-}
-
-.righter {
-    float: right;
-} */
 
 .step-wrapper:nth-of-type(odd) {
     /* if you switch it to inline-flex, you'll get better selection but you'll have to create a wrapper that will fuck up everything */
@@ -672,37 +557,18 @@ section:nth-child(5) {
     float: right;
 }
 
-/* Animation pattern where step explanation appears from the right */
-/* .step-wrapper div:nth-child(1) {
-    width: 1224px;
-    background-color: var(--blackish);
-    border-radius: 0 25rem 25rem 0;
-}
-
-.step-wrapper div:nth-child(2) {
-    width: 1224px;
-    background-color: var(--white);
-    border-radius: 25rem 0 0 25rem;
-    float: right;
-} */
-
 .step-wrapper:nth-of-type(odd) .step {
     background-color: var(--blackish);
     border-radius: 0 25rem 25rem 0;
     flex-direction: row;
-    /* float: left; */
-    /* aspect-ratio: 16/9; */
 }
 
 .step-wrapper:nth-of-type(even) .step {
     background-color: var(--blackish);
     border-radius: 25rem 0 0 25rem;
-    /* float: right; */
-    /* position: relative; */
 }
 
 .step-wrapper:nth-of-type(odd) .step-extra {
-        /* display: inline-block; */
         opacity: 0;
         width: 20em;
         padding: 2rem;
@@ -715,7 +581,6 @@ section:nth-child(5) {
 }
 
 .step-wrapper:nth-of-type(even) .step-extra {
-        /* display: inline-block; */
         opacity: 0;
         width: 20em;
         padding: 2rem;
@@ -727,9 +592,7 @@ section:nth-child(5) {
         z-index: 1; 
 }
 
-/* hover logic that I'll try to circumvent here */
 .step-wrapper:nth-of-type(odd):hover .step-extra {
-    /* display: block; */
     position: relative;
     opacity: 1;
     top: -6px;
@@ -738,7 +601,6 @@ section:nth-child(5) {
 }
 
 .step-wrapper:nth-of-type(even):hover .step-extra {
-    /* display: block; */
     position: relative;
     opacity: 1;
     top: -6px;
@@ -746,13 +608,6 @@ section:nth-child(5) {
     box-shadow: inset;
 }
 
-/* IDEAL STATE OF THINGS THAT DOES NOT WORK */
-/* .step-wrapper:nth-of-type(odd) .step:hover {
-    opacity: 1;
-    top: -6px;
-    left: 200px;
-    box-shadow: inset;
-} */
 
 .step {
     display: flex;
@@ -772,29 +627,13 @@ section:nth-child(5) {
 }
 
 /* Meet Your Heroes */
-
 #heroes {
     position: relative;
 }
 
-/* .heroes-h1wrapper {
-    position: absolute;
-    z-index: 2;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-evenly;
-    mix-blend-mode: screen;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    height: 100%;
-} */
-
 #heroes h1:nth-of-type(1) {
     text-align: center;
     font-size: 7rem;
-    /* display: sticky; */
     position: absolute;
     z-index: 2;
     left: 0;
@@ -810,7 +649,6 @@ section:nth-child(5) {
 #heroes h1:nth-of-type(2) {
     text-align: center;
     font-size: 7rem;
-    /* display: sticky; */
     position: absolute;
     z-index: 2;
     left: 0;
@@ -826,7 +664,6 @@ section:nth-child(5) {
 #heroes h1:nth-of-type(3) {
     text-align: center;
     font-size: 7rem;
-    /* display: sticky; */
     position: absolute;
     z-index: 2;
     top:70%;
@@ -839,11 +676,6 @@ section:nth-child(5) {
     text-align: center;
 }   
 
-
-/* .splide {
-    margin-bottom: 4rem;
-} */
-
 .slide-img {
     width: 100%;
     height: 50vh;
@@ -851,38 +683,7 @@ section:nth-child(5) {
     object-position: top;
 }
 
-/* Slider from scratch (scrapped) */
-
-/* .baldies-container {
-    width: 100%;
-    overflow: hidden;
-}
-
-.baldies {
-    display: flex;
-    width: calc(100% - 10%);
-    transform: translateX(0%);
-} */
-
-/* .baldy { */
-    /* width: 300px; */
-    /* aspect-ratio: 16/9; */
-    /* height: 300px; */
-    /* background-repeat: no-repeat;
-    background-position: center; */
-    /* background-size: cover;
-    padding: .25rem;
-} */
-
-/* .baldy > img {
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    max-height: 450px;
-} */
-
 /* Archibald */
-
 #meet-archibald {
     display: flex;
     justify-content: space-around;
@@ -906,7 +707,6 @@ section:nth-child(5) {
 }
 
 /* Quotes */
-
 #quotes {
     display: grid;
     align-items: center;
@@ -927,19 +727,4 @@ section:nth-child(5) {
 #quotes h2:last-of-type {
     text-align: right;
 }
-/* 
-.quote {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
-
-.quote h2:last-of-type {
-    align-items: flex-end;
-} */
-
-/* Footer */
-
-
 }

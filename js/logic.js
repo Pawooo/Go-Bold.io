@@ -274,8 +274,6 @@ function applySettings() {
       cardListener(bCardMahatma, mahatmaAnim, 'touchend');
      }
 }
-// When all this is done, you should run a function that will check the class value of icons and load corresponding animations accordingly
-// A certain share of animations remains unchanged regardless of the language, so you can just load them the way they are (cards, $$$)
 
 // Splider
 
@@ -313,39 +311,11 @@ document.addEventListener( 'DOMContentLoaded', function() {
     splideRev.mount( window.splide.Extensions );
 } );
 
-// Splider for Cards (ran into some compatibility issues btw Lottie and Splide)
-// function splideInitiator(){
-//   if (document.documentElement.clientWidth < 1000) {
-//   const splideCards = new Splide( '.splideCards', {
-//     // type: 'loop',
-//     drag: 'free',
-//     focus: 'center',
-//     pagination: false,
-//     perPage: 1,
-//     gap: '1rem',
-//     // direction: "rtl",
-//     // autoScroll: {
-//     //     speed: 1,
-//     // }
-//   });
-//   splideCards.mount();
-// };
-// }
-
-// window.onresize = splideInitiator;
-
 // Dark Mode Icon
 const dlModeSwitcher = document.querySelector(".l-mode-switcher");
 const langIcon = document.querySelector(".lang-icon");
 
 dlModeSwitcher.addEventListener('click', dlModeSwitch);
-
-// If you want to swap animations for DL mode
-// dlModeSwitcher.addEventListener('click', () => {
-//   dlModeSwitch();
-//   lottieDLModeSwapper();
-// });
-// lottieDLModeSwapper is essentially a conditional check that swaps the animation's source file 
 
 function dlModeSwitch() {
   dlModeSwitcher.classList.toggle("active");
@@ -360,12 +330,7 @@ function dlModeSwitch() {
 const setTheme = theme => document.documentElement.className = theme;
 
 // Lang Switcher
-
-
-
 langIcon.addEventListener('click', langSwitcher)
-
-
 
 function langSwitcher(){
   setTimeout( () => {
@@ -408,10 +373,6 @@ function langSwitcher(){
   }, 300);
 }
 
-
-// Everything Lottie-related
-// Wrap everything in a conditional that will trigger on dialog button click and will check the class/value of the language icon so you only load these animations once and in correct form
-
 const section1 = document.querySelector('#section-1');
 const section2 = document.querySelector('#section-2');
 const bCardProfX = document.querySelector('#profx-anim');
@@ -422,21 +383,6 @@ const dolla2 = document.querySelector('#dolla-anim2');
 const dolla3 = document.querySelector('#dolla-anim3');
 const langIconL = document.querySelector('#lang-l');
 const langIconD = document.querySelector('#lang-d');
-
-// Trying to make it short
-function getThatAnimationGoing (containerName, path, renderer, loop, autoplay, name) {
-  bodymovin.loadAnimation ({
-  container: containerName, // Required
-  path: path, // Required
-  renderer: renderer, // Required
-  loop: loop, // Optional
-  autoplay: autoplay, // Optional
-  name: name, // Name for future reference. Optional.
-  })
-};
-// const section1Anim = getThatAnimationGoing (section1, 'lottie/Hero-text.json', 'svg', false, true, 'Section 1 Animation');
-// const section2Anim = getThatAnimationGoing (section2, 'db-bold.json', 'svg', false, true, 'Section 1 Animation');
-// Conclusion: Very hard to read, back to the original one
 
 
 // All-modes-compatible animations
@@ -486,12 +432,6 @@ function getThatAnimationGoing (containerName, path, renderer, loop, autoplay, n
     name: "Section 3 Numbers Anim", // Name for future reference. Optional.
   })   
 
-// Dmitry-sensei ternary operator variant (shorter code)
-// const direction = method === 'mouseEnter' ? 1 : -1;
-// htmlElement.addEventListener(method, (e) => {
-// animName.setDirection(direction)
-// animName.play()})
-
 function cardListener (htmlElement, animName, method) {
   const directionMenu = 1;
   if (method === "mouseenter" || method === "touchstart") {
@@ -526,7 +466,6 @@ function langIconListener (htmlElement, animName, method) {
   })}
 } 
 
-
 function langIconListenerCompleteAnim (htmlElement, animName, method) {
   const directionMenu = 1;
   if (method === "click" || method === "touchstart") {
@@ -544,8 +483,6 @@ langIconListener(langIconD, langDAnim, 'mouseleave');
 langIconListenerCompleteAnim(langIconL, langLAnim, 'click');
 langIconListenerCompleteAnim(langIconD, langDAnim, 'click');
 
-
-
 // Scroll Trigger 
 const saveMonay = document.querySelector('#save-your-money');
 const scrollContainer = document.querySelector('.scroll-container');
@@ -559,13 +496,4 @@ function isInView() {
   }
 }
 
-// saveMonay.addEventListener('scroll', isInView);
 scrollContainer.addEventListener('scroll', isInView);
-// if (isInView(saveMonay)) {
-//   dollaAnim1.play();
-//   dollaAnim2.play();
-//   dollaAnim3.play();
-// }
-
-// if (box.top < window.innerHeight && box.bottom >= 0)
-
