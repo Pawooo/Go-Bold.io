@@ -6,13 +6,13 @@ My first ever webpage. The goal of the project is to showcase what can be done w
 
 Everything here is made by me, except for @unsplash images (authors listed at the end of the document):
 
-Animations were made using After Effects/Bodymovin/Lottie Plugin
+**—Animations were made using After Effects/Bodymovin/Lottie Plugin
 
-Vectors were done in Illustrator
+—Vectors were done in Illustrator
 
-HTML/CSS/JS
+—HTML/CSS/JS
 
-Sliders are a courtesy of Splide.js
+—Sliders are a courtesy of Splide.js**
 
 
 Things I discovered as I pieced this together: 
