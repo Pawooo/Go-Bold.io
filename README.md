@@ -4,11 +4,13 @@ AKA Go-bold.io (Dota 2 Reference Intended) / hage-maho (禿魔法) / hagemashou 
 My first ever webpage. The goal of the project is to showcase what can be done with Lottie and test my knowledge of webdev basics. Also it's a great way to demonstrate just how freaking amazing my puns are. 
 
 
-Everything here is made by me, except for @unsplash images (authors listed at the end of the document):
+Everything here is made by me, except for @unsplash images and font (authors listed at the end of the document):
+
 *Animations were made using After Effects/Bodymovin/Lottie Plugin
 *Vectors were done in Illustrator
 *HTML/CSS/JS
-*Sliders are a courtesy of Splide.js
+*Sliders are a courtesy of Splide.js![Go_Bold io](https://user-images.githubusercontent.com/106813449/175611325-7a8fa6da-3626-40dd-a9f3-f17c70926078.png)
+
 
 
 Things I discovered as I pieced this together: 
