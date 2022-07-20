@@ -447,38 +447,42 @@ function cardListener (htmlElement, animName, method) {
 
 
 // Language Icon Listener
-let LangIconPlayed = false;
+let langIconPlayed = false;
 
 function langIconListener (htmlElement, animName, method) {
   const directionMenu = 1;
+  
   if (method === "mouseenter") {
   htmlElement.addEventListener(method, (e) => {
     animName.setDirection(directionMenu);
     animName.playSegments([0, 10], true);
   })} else if (method === "mouseleave") {
   htmlElement.addEventListener(method, (e) => {
-    if(LangIconPlayed === false) {
-    animName.setDirection(-directionMenu);
-    animName.playSegments([10, 0], true);
+    if(!langIconPlayed) {
+      animName.setDirection(-directionMenu);
+      animName.playSegments([10, 0], true);
     } else {
-    LangIconPlayed = false;
+      langIconPlayed = false;
     }
   })}
 } 
 
 function langIconListenerCompleteAnim (htmlElement, animName, method) {
   const directionMenu = 1;
-  if (method === "click" || method === "touchstart" && LangIconPlayed === false) {
+
+  if ((method === "click" || method === "touchstart") && !langIconPlayed) {
   htmlElement.addEventListener(method, (e) => {
-    animName.setDirection(directionMenu);
-    animName.playSegments([10, 22], true);
-    LangIconPlayed = true;
-  })} 
-  else if (method === "click" || method === "touchstart" && LangIconPlayed === true) {
-  htmlElement.addEventListener(method, (e) => {
-    animName.setDirection(directionMenu);
-    animName.playSegments([22, 10], true);
-    LangIconPlayed = false;
+    if (!langIconPlayed) {
+      animName.setDirection(directionMenu);
+      animName.playSegments([10, 22], true);
+      langIconPlayed = true;
+      console.log(langIconPlayed);
+    } else {
+      animName.setDirection(-directionMenu);
+      animName.playSegments([22, 10], true);
+      langIconPlayed = false;
+      console.log(langIconPlayed);
+    }
   })} 
 } 
 

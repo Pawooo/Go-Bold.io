@@ -126,7 +126,7 @@
     }
     .card-wrapper > * > * {
         width: clamp(159px, 20vw, 21vw); 
-        height: 29vh;
+        height: 18vh;
     }
     .card-wrapper {
         flex-wrap: wrap;
@@ -141,7 +141,7 @@
         font-size: clamp(1rem, 1rem, 3vw);
     }
     .bc-background {
-        top: -28vh;
+        top: -17.5vh;
     }
     .baldest-title {
         width:100%;
