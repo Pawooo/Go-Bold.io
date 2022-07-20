@@ -468,11 +468,17 @@ function langIconListener (htmlElement, animName, method) {
 
 function langIconListenerCompleteAnim (htmlElement, animName, method) {
   const directionMenu = 1;
-  if (method === "click" || method === "touchstart") {
+  if (method === "click" || method === "touchstart" && LangIconPlayed === false) {
   htmlElement.addEventListener(method, (e) => {
     animName.setDirection(directionMenu);
     animName.playSegments([10, 22], true);
     LangIconPlayed = true;
+  })} 
+  else if (method === "click" || method === "touchstart" && LangIconPlayed === true) {
+  htmlElement.addEventListener(method, (e) => {
+    animName.setDirection(directionMenu);
+    animName.playSegments([22, 10], true);
+    LangIconPlayed = false;
   })} 
 } 
 
