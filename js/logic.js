@@ -451,7 +451,7 @@ let langIconPlayed = false;
 
 function langIconListener (htmlElement, animName, method) {
   const directionMenu = 1;
-  
+
   if (method === "mouseenter") {
   htmlElement.addEventListener(method, (e) => {
     animName.setDirection(directionMenu);
@@ -476,12 +476,10 @@ function langIconListenerCompleteAnim (htmlElement, animName, method) {
       animName.setDirection(directionMenu);
       animName.playSegments([10, 22], true);
       langIconPlayed = true;
-      console.log(langIconPlayed);
     } else {
       animName.setDirection(-directionMenu);
       animName.playSegments([22, 10], true);
       langIconPlayed = false;
-      console.log(langIconPlayed);
     }
   })} 
 } 
