@@ -157,7 +157,13 @@
 }
 
 /* Reset + Typography */
+/* Fallback */
 @import url('https://fonts.googleapis.com/css2?family=Reem+Kufi:wght@400;500;600;700&display=swap');
+/* Local Font Data */
+@import url('/fonts/ReemKufi-Bold.ttf');
+@import url('/fonts/ReemKufi-Medium.ttf');
+@import url('/fonts/ReemKufi-Regular.ttf');
+@import url('/fonts/ReemKufi-SemiBold.ttf');
 
 @layer bigScr {
 * {
