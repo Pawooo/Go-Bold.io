@@ -168,7 +168,7 @@
 * {
     margin: 0;
     font-family: 'Reem Kufi';
-    src: local("/fonts/ReemKufi-SemiBold.ttf");
+    src: url("/fonts/ReemKufi-SemiBold.ttf");
     /* line-height: 2em; */
 }
 
