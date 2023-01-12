@@ -98,7 +98,7 @@
         
         #confirm-settings {
             all: unset;
-            padding: 0.5em;
+            padding: 0 0.5em;
             font-size: clamp(2rem, 8vw, 5rem);
             color: var(--white);
             border: 0.5rem solid var(--white);
@@ -159,22 +159,19 @@
 /* Fallback */
 /* @import url('https://fonts.googleapis.com/css2?family=Reem+Kufi:wght@400;500;600;700&display=swap'); */
 /* Local Font Data */
-@import url('/fonts/BergenSans-Bold.ttf');
-@import url('/fonts/BergenSans-SemiBold.ttf');
-@import url('/fonts/BergenSans.ttf');
+@import url('/fonts/ReemKufi-Bold.ttf');
+@import url('/fonts/ReemKufi-Medium.ttf');
+@import url('/fonts/ReemKufi-Regular.ttf');
+@import url('/fonts/ReemKufi-SemiBold.ttf');
 
 @layer bigScr {
 * {
     margin: 0;
-    font-family: 'Bergen Sans';
-    line-height: 2em;
+    font-family: 'Reem Kufi';
+    src: url(/fonts/ReemKufi-SemiBold.ttf);
+    /* line-height: 2em; */
 }
 
-@font-face {
-    font-family: 'Bergen Sans';
-    src: url(/fonts/BergenSans.ttf);
-}
-  
 
 /* Color Variables */
 
@@ -273,7 +270,7 @@ section {
 
 #confirm-settings {
     all: unset;
-    padding: 0.5em;
+    padding: 0 0.5em;
     font-size: clamp(2rem, 8vw, 5rem);
     color: var(--white);
     border: 0.5rem solid var(--white);
