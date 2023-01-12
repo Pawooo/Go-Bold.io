@@ -168,13 +168,11 @@
 * {
     margin: 0;
     font-family: 'Reem Kufi';
-    src: url("/fonts/ReemKufi-SemiBold.ttf");
-    /* line-height: 2em; */
 }
 
 @font-face {
     font-family: 'Reem Kufi';
-    src: url("/fonts/ReemKufi-SemiBold.ttf");
+    src: url("../../Go-Bold.io/fonts/ReemKufi-SemiBold.ttf");
 }
 
 /* Color Variables */
